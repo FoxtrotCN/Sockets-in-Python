@@ -26,7 +26,7 @@ def receive_messages():
 
 def write_messages():
     while True:
-        message = f"{username}: {input('')}"
+        message = f"{username}: {input('> ')}"
         client.send(message.encode("utf-8"))
 
 
